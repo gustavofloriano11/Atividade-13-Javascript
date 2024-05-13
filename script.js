@@ -9,7 +9,7 @@ function exercicio1(){
     equacao = 2*numero1 + 3*numero2
     window.alert(`A diferença dos números é: ${diferenca}`)
     window.alert(`O dobro de ${numero1} somado com triplo de ${numero2}, é: ${equacao}`)
-    window.alert(`O dobro de cada uma variável, é: ` + 2*numero1 + ` e ` + 2*numero2)
+    window.alert(`A multiplicação das variáveis, é; ` + numero1*numero2)
     if (numero1>numero2){
         console.log(numero1 + `, ` + numero2)
     } else {
