@@ -12,3 +12,8 @@ body{
 #centralizada{
     text-align: center;
 }
+.botao{
+    background-color: rgb(203, 231, 255);
+    border-width: 1px;
+    border-radius: 10px;
+}
