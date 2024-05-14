@@ -5,7 +5,11 @@ function exercicio1(){
     let equacao = 0;
     numero1 = window.prompt("Digite um número: ")
     numero2 = window.prompt("Digite outro número: ")
-    diferenca = numero1-numero2
+    if (numero2 > numero1){
+        diferenca = numero2-numero1
+    } else {
+        diferenca = numero1-numero2
+    }
     equacao = 2*numero1 + 3*numero2
     window.alert(`A diferença dos números é: ${diferenca}`)
     window.alert(`O dobro de ${numero1} somado com triplo de ${numero2}, é: ${equacao}`)
