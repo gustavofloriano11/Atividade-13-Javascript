@@ -5,6 +5,7 @@ function exercicio1(){
     let equacao = 0;
     numero1 = window.prompt("Digite um número: ")
     numero2 = window.prompt("Digite outro número: ")
+    let numeroOrdenado = [numero1, numero2];
     if (numero2 > numero1){
         diferenca = numero2-numero1
     } else {
@@ -14,11 +15,12 @@ function exercicio1(){
     window.alert(`A diferença dos números é: ${diferenca}`)
     window.alert(`O dobro de ${numero1} somado com triplo de ${numero2}, é: ${equacao}`)
     window.alert(`A multiplicação das variáveis, é; ` + numero1*numero2)
-    if (numero1>numero2){
-        console.log(numero1 + `, ` + numero2)
-    } else {
-        console.log(numero2 + `, ` + numero1)
-    }
+    numeroOrdenado.sort(
+        function(a, b){
+            return b-a;
+        }
+    )
+    console.log(numeroOrdenado)
 };
 
 function exercicio2(){
